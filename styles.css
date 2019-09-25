@@ -1,0 +1,47 @@
+body {
+    
+}
+
+.wrapper {
+    width: 1020px;
+    margin: auto;
+}
+
+header {
+    background-image: url("./assets/images/bcgr-1.png");
+    background-size: cover;
+    height: 566px;  
+}
+
+.main-header {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    width: auto;
+}
+
+.diffs {
+    background-image: url("./assets/images/bcgr-2.png");
+    background-size: cover;
+    height: 212px;  
+
+}
+
+.slider {
+    background-image: url("./assets/images/bcgr-3.png");
+    background-size: cover;
+    height: 509px;
+}
+
+.media {
+    background-image: url("./assets/images/bcgr-4.png");
+    background-size: cover;
+    height: 499px;
+}
+
+footer {
+    background-color: #4c4c4c;
+    height: 64px;
+}
