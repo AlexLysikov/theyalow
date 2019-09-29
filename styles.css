@@ -1,24 +1,24 @@
 .wrapper {
     width: 1020px;
-    margin: auto;    
+    margin: 0 auto;   
 }
 
 header {
     background-image: url("./assets/images/bcgr-1.png");
     background-size: cover;
-    height: 566px;  
+    height: 564px;
 }
 
 .main-header .wrapper {
     display: flex;
     align-items: flex-end;
-    height: 118px;
 }
 
 .logo {
     display: flex;
     width: 300px;
     align-items: center;
+    margin-top: 28px;
     font-size: 41px;
     text-transform: uppercase;
     letter-spacing: 0px;
@@ -27,6 +27,10 @@ header {
     font-style: italic;
     text-decoration-line: none;
     text-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+}
+
+.logo h1 {
+    margin: 7px 0 0  4px;
 }
 
 .menu {
@@ -48,16 +52,24 @@ header {
     border-right: 1px solid #9b7d08;
 }
 
+.menu li:last-child {
+    border: none;
+}
+
 .menu a {
     display: block;
     align-self: center;
-    font-size: 17px;
+    font-size: 1.1rem;
     letter-spacing: 0px;
     color: #9b7d08;
     font-family: "Segoe WP", sans-serif;
     text-align: center;
     text-transform: uppercase;
     text-decoration-line: none;
+}
+
+.menu svg {
+    margin-left: 5px;
 }
 
 .videos {
@@ -81,16 +93,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 57px 0;
 }
 
 .videos video {
-    width: 549px;
-    height: 327px;
+    width: auto;
+    
 }
 
 .video-name {
     text-align: center;
-    font-size: 63px;
+    font-size: 4rem;
     font-family: "Asap", sans-serif;
     color: white;
     text-transform: uppercase;
@@ -105,20 +118,63 @@ header {
 .diffs {
     background-image: url("./assets/images/bcgr-2.png");
     background-size: cover;
-    height: 212px;  
+    height: 213px;
+}
 
+.diffs .wrapper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    height: 213px;
+    /* justify-content: space-between;
+    align-items: center; */
+}
+
+.icons {
+    display: flex;
+    /* margin: auto 0; */
+    width: auto;
+    justify-self: flex-end;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.icons:first-child {
+    width: 341px;
+}
+
+div.icons:nth-child(2) {
+    width: 337px;
+}
+
+div.icons:last-child {
+    width: 337px;
+}
+
+.icons span {
+    margin-top: 10px;
+    font-size: 27px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .slider {
     background-image: url("./assets/images/bcgr-3.png");
     background-size: cover;
-    height: 509px;
+    height: 506px;
+}
+
+.slider .wrapper {
+    display: flex;
 }
 
 .media {
     background-image: url("./assets/images/bcgr-4.png");
     background-size: cover;
-    height: 499px;
 }
 
 .media .wrapper {
@@ -126,7 +182,6 @@ header {
 }
 
 .media h2 {
-    margin: 46px auto;
     font-size: 43px;
     font-family: "PTSans", sans-serif;
     color: rgb(245, 197, 6);
@@ -162,5 +217,5 @@ header {
 
 footer {
     background-color: #4c4c4c;
-    height: 64px;
+    width: auto;
 }
