@@ -56,6 +56,10 @@ header {
     border: none;
 }
 
+.menu li:hover {
+        background-image: linear-gradient(0deg, #ffd325 0%, #bb9600 100%);
+}
+
 .menu a {
     display: block;
     align-self: center;
@@ -89,6 +93,12 @@ header {
     margin: auto;
 }
 
+.arrow:hover {
+    height: 61px;
+    background-color: #ddb100;
+
+}
+
 .videos .wrapper {
     display: flex;
     justify-content: space-between;
@@ -98,7 +108,7 @@ header {
 
 .videos video {
     width: auto;
-    
+    margin-left: 10px;
 }
 
 .video-name {
@@ -109,10 +119,12 @@ header {
     text-transform: uppercase;
     line-height: 1.2;
     text-align: center;
+    margin: -29px 18px 0 0;
 }
 
 .video-name span {
     color: rgb(245, 197, 6);
+    margin-right: 16px;
 }
 
 .diffs {
@@ -129,7 +141,6 @@ header {
 
 .icons {
     display: flex;
-    /* margin: auto 0; */
     width: auto;
     justify-self: flex-end;
     align-self: center;
@@ -179,7 +190,7 @@ div.icons:last-child {
     padding-top: 40px;
 }
 
-.slider .wrapper:last-child {
+.slider .wrapper:nth-child(2) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 35px;
@@ -234,8 +245,94 @@ div.icons:last-child {
     padding: 0 12px 17px 0;
 }
 
+.slider-show:first-child svg:hover, .slider-show:nth-child(3) svg:last-child:hover {
+    opacity: 0.5;
+ }
+
+.current-date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 112px;
+    height: 86px;
+    background: #ddb101;
+}
+
+.current-date span:first-child {
+    display: block;
+    font-size: 51px;
+    letter-spacing: 1px;
+    line-height: 38px;
+    color: #ffffff;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+}
+
+.current-date span:last-child {
+    display: block;
+    font-size: 21px;
+    letter-spacing: 0px;
+    line-height: 38px;
+    color: #b26529;
+    font-family: "Segoe UI", sans-serif;
+    text-transform: uppercase;
+}
+
+.slider .wrapper:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+input[type=range] {
+    -webkit-appearance: none; 
+    width: 896px; 
+    background: transparent;
+    margin: 0 0 0px 24px;
+}
+  
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+  
+input[type=range]:focus {
+    outline: none; 
+}
+  
+input[type=range]::-ms-track {
+    cursor: pointer;
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    height: 15px;
+    width: 197px;
+    border-radius: 10px;
+    background: #ec9e03;
+    cursor: pointer;
+}
+
+input[type=range]:hover::-webkit-slider-thumb {
+    background: #b87b03;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    margin: 40px auto auto 0;
+    width: 60%;
+    height: 15px;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 10px;
+}
+  
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #fadfa9;
+}
+
 .media {
-    background-image: url("./assets/images/bcgr-4.png");
+    background-image: url("./assets/images/bcgr-4.png");   
     background-size: cover;
     height: 496px;
 }
@@ -245,20 +342,21 @@ div.icons:last-child {
 }
 
 .media h2 {
-    padding-top: 40px;
+    padding-top: 47px;
     font-size: 43px;
     font-family: "PTSans", sans-serif;
     color: rgb(245, 197, 6);
     text-transform: uppercase;
     text-align: center;
     font-weight: 400;
-    letter-spacing: 0px;
+    letter-spacing: -3px;
 }
 
 .media-items {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    margin-top: 7px;
 }
 
 .round {
@@ -273,13 +371,54 @@ div.icons:last-child {
     width: 116px;
     background-color: rgb(245, 197, 6);
     font-size: 19px;
-    letter-spacing: 0px;
+    letter-spacing: 1px;
     color: #ffffff;
     font-family: "PT Sans Narrow", sans-serif;
     font-weight: 700;
 }
 
+.media-container-big svg {
+    margin: 42px 0 0 19px;
+}
+
+.media-items svg:nth-child(2) {
+    margin: 40px 0px 0 24px;
+}
+
+.media-items svg:nth-child(3) {
+    margin: 153px 0 0 25px;
+}
+
+.text-media {
+    width: 352px;
+    height: 45px;
+    margin: 0 0 78px 100px;
+    font-size: 22px;
+    letter-spacing: 0px;
+    color: #a9a9a7;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    list-style: url("./assets/images/list-marker.png");
+}
+
+.text-media li {
+    margin-bottom: 26px;}
+
 footer {
     background-color: #4c4c4c;
     width: auto;
+}
+
+footer .logo {
+    margin-top: 0;  
+}
+
+footer .wrapper {
+    padding-top: 12px;
+}
+
+footer span {
+    display: block;
+    margin-left: 10px;
+    font-size: 29px;
 }
