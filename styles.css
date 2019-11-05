@@ -1,3 +1,10 @@
+/*
+Using Pseudo-classes is correct but I haven't see a lot of them at the real project.
+It seem to me that it's better to use just classes selectors. But in general it's correct.
+
+As I can see you haven't implement mobile version.
+*/
+
 .wrapper {
     width: 1020px;
     margin: 0 auto;   
@@ -6,6 +13,7 @@
 header {
     background-image: url("./assets/images/bcgr-1.png");
     background-size: cover;
+    /* Try to avoid setting height to blocks. The result height is height of the inner content of this block */
     height: 564px;
 }
 
